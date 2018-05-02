@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="366.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <VBox prefHeight="360.0" prefWidth="630.0">
+         <children>
+            <Label fx:id="titleBar" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="669.0" text="RPG Virtual Dice Roller" textAlignment="CENTER" textFill="#ff5d5d">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="26.0" prefWidth="577.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="34.0" text="Die">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="94.0" text="Quantity">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="37.0" text="+|~|-">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="70.0" text="+:✓, -:□">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="70.0" text="Modifier">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="71.0" text="                   ">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="75.0" text="Results">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="178.0" text="History">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="233.0" prefWidth="630.0">
+               <children>
+                  <VBox maxWidth="30.0" minWidth="30.0" prefWidth="30.0">
+                     <children>
+                        <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/d4.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/d6.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/d8.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/d10.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/d12.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/d100.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/d20.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/%3F.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="216.0" prefWidth="40.0">
+                     <children>
+                        <TextField fx:id="numD4" alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="40.0" promptText="#" />
+                        <TextField fx:id="numD6" alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="40.0" promptText="#" />
+                        <TextField fx:id="numD8" alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="40.0" promptText="#" />
+                        <TextField fx:id="numD10" alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="40.0" promptText="#" />
+                        <TextField fx:id="numD12" alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="40.0" promptText="#" />
+                        <TextField fx:id="numD100" alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="40.0" promptText="#" />
+                        <TextField fx:id="numD20" alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="40.0" promptText="#" />
+                        <TextField fx:id="numDQ" alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="40.0" promptText="#" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="231.0" prefWidth="55.0">
+                     <children>
+                        <Label maxHeight="27.0" minHeight="27.0" prefHeight="27.0" text="d4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label maxHeight="27.0" minHeight="27.0" prefHeight="27.0" text="d6">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label maxHeight="27.0" minHeight="27.0" prefHeight="27.0" text="d8">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label maxHeight="27.0" minHeight="27.0" prefHeight="27.0" text="d10">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label maxHeight="27.0" minHeight="27.0" prefHeight="27.0" text="d12">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label maxHeight="27.0" minHeight="27.0" prefHeight="27.0" text="d100">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label maxHeight="27.0" minHeight="27.0" prefHeight="27.0" text="d20">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label maxHeight="27.0" minHeight="27.0" prefHeight="27.0" text="d">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="valueDQ" prefHeight="27.0" prefWidth="41.0" promptText="?" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="216.0" prefWidth="53.0">
+                     <children>
+                        <Slider fx:id="d4slide" blockIncrement="1.0" majorTickUnit="1.0" max="2.0" maxHeight="27.0" minHeight="27.0" minorTickCount="1" prefHeight="27.0" snapToTicks="true" value="1.0" />
+                        <Slider fx:id="d6slide" blockIncrement="1.0" majorTickUnit="1.0" max="2.0" maxHeight="27.0" minHeight="27.0" minorTickCount="1" prefHeight="27.0" value="1.0" />
+                        <Slider fx:id="d8slide" blockIncrement="1.0" majorTickUnit="1.0" max="2.0" maxHeight="27.0" minHeight="27.0" minorTickCount="1" prefHeight="27.0" value="1.0" />
+                        <Slider fx:id="d10slide" blockIncrement="1.0" majorTickUnit="1.0" max="2.0" maxHeight="27.0" minHeight="27.0" minorTickCount="1" prefHeight="27.0" value="1.0" />
+                        <Slider fx:id="d12slide" blockIncrement="1.0" majorTickUnit="1.0" max="2.0" maxHeight="27.0" minHeight="27.0" minorTickCount="1" prefHeight="27.0" value="1.0" />
+                        <Slider fx:id="d100slide" blockIncrement="1.0" majorTickUnit="1.0" max="2.0" maxHeight="27.0" minHeight="27.0" minorTickCount="1" prefHeight="27.0" value="1.0" />
+                        <Slider fx:id="d20slide" blockIncrement="1.0" majorTickUnit="1.0" max="2.0" maxHeight="27.0" minHeight="27.0" minorTickCount="1" prefHeight="27.0" value="1.0" />
+                        <Slider fx:id="dQslide" blockIncrement="1.0" majorTickUnit="1.0" max="2.0" maxHeight="27.0" minHeight="27.0" minorTickCount="1" prefHeight="27.0" value="1.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="216.0" prefWidth="68.0">
+                     <children>
+                        <CheckBox fx:id="d4check" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" text="+/-" />
+                        <CheckBox fx:id="d6check" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" text="+/-" />
+                        <CheckBox fx:id="d8check" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" text="+/-" />
+                        <CheckBox fx:id="d10check" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" text="+/-" />
+                        <CheckBox fx:id="d12check" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" text="+/-" />
+                        <CheckBox fx:id="d100check" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" text="+/-" />
+                        <CheckBox fx:id="d20check" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" text="+/-" />
+                        <CheckBox fx:id="dQcheck" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" text="+/-" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="192.0" prefWidth="50.0">
+                     <children>
+                        <TextField fx:id="modD4" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="mod" />
+                        <TextField fx:id="modD6" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="mod" />
+                        <TextField fx:id="modD8" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="mod" />
+                        <TextField fx:id="modD10" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="mod" />
+                        <TextField fx:id="modD12" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="mod" />
+                        <TextField fx:id="modD100" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="mod" />
+                        <TextField fx:id="modD20" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="mod" />
+                        <TextField fx:id="modDQ" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="mod" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="216.0" prefWidth="23.0" />
+                  <VBox prefHeight="231.0" prefWidth="44.0">
+                     <children>
+                        <Button fx:id="d4b" mnemonicParsing="false" onAction="#rolld4" text="roll" />
+                        <Button fx:id="d6b" mnemonicParsing="false" onAction="#rolld6" text="roll" />
+                        <Button fx:id="d8b" mnemonicParsing="false" onAction="#rolld8" text="roll" />
+                        <Button fx:id="d10b" mnemonicParsing="false" onAction="#rolld10" text="roll" />
+                        <Button fx:id="d12b" mnemonicParsing="false" onAction="#rolld12" text="roll" />
+                        <Button fx:id="d100b" mnemonicParsing="false" onAction="#rolld100" text="roll" />
+                        <Button fx:id="d20b" mnemonicParsing="false" onAction="#rolld20" text="roll" />
+                        <Button fx:id="dQb" mnemonicParsing="false" onAction="#rolldQ" text="roll" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="216.0" prefWidth="23.0" />
+                  <VBox prefHeight="192.0" prefWidth="50.0">
+                     <children>
+                        <TextField fx:id="resD4" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="=" />
+                        <TextField fx:id="resD6" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="=" />
+                        <TextField fx:id="resD8" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="=" />
+                        <TextField fx:id="resD10" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="=" />
+                        <TextField fx:id="resD12" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="=" />
+                        <TextField fx:id="resD100" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="=" />
+                        <TextField fx:id="resD20" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="=" />
+                        <TextField fx:id="resDQ" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="=" />
+                     </children>
+                  </VBox>
+                  <TextArea fx:id="bigBox" prefHeight="231.0" prefWidth="190.0" promptText="This is where your rolls will appear." text="This is where your rolls will appear." wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="10.0" />
+                     </font></TextArea>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="98.0" prefWidth="630.0">
+               <children>
+                  <VBox prefHeight="90.0" prefWidth="436.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="78.0" prefWidth="188.0">
+                                 <children>
+                                    <CheckBox fx:id="triadv" mnemonicParsing="false" text="Triple-Advantage Attack">
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                    </CheckBox>
+                                    <CheckBox fx:id="rr1s" mnemonicParsing="false" text="Reroll 1s on d20" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label prefHeight="27.0" prefWidth="92.0" text="Crit-Minimum:" />
+                                          <TextField fx:id="critMin" alignment="CENTER" prefHeight="27.0" prefWidth="42.0" promptText="##" text="20" />
+                                          <CheckBox fx:id="critActive" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="28.0" prefWidth="24.0" textAlignment="RIGHT" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="78.0" prefWidth="212.0">
+                                 <children>
+                                    <CheckBox fx:id="rr12" mnemonicParsing="false" prefWidth="218.0" text="Reroll 1 &amp; 2 on Damage Dice">
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                    </CheckBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="90.0" prefWidth="189.0">
+                     <children>
+                        <HBox prefHeight="32.0" prefWidth="189.0">
+                           <children>
+                              <CheckBox fx:id="carryTotal" mnemonicParsing="false" onAction="#resetTotal" prefHeight="27.0" prefWidth="107.0" text="Carry Total: " />
+                              <TextField fx:id="total" prefHeight="27.0" prefWidth="90.0" />
+                           </children>
+                        </HBox>
+                        <Button fx:id="resetHistory" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#resetHistory" text="Clear History" textFill="#8d0000">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="reset1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#reset" text="RESET" textFill="#8d0000">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label fx:id="bottomBar" alignment="CENTER" contentDisplay="CENTER" layoutY="359.0" prefHeight="9.0" prefWidth="630.0" text="Made by Thomas R. Evangelista © V.I.MMXVIII All rights reserved." textAlignment="CENTER" textFill="#ff5d5d">
+         <font>
+            <Font name="Arial Bold Italic" size="7.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
