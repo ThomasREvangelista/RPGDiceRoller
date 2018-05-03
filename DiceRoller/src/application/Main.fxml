@@ -41,11 +41,6 @@
                         <Font name="Arial Bold" size="13.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="70.0" text="+:✓, -:□">
-                     <font>
-                        <Font name="Arial Bold" size="13.0" />
-                     </font>
-                  </Label>
                   <Label alignment="CENTER" prefHeight="18.0" prefWidth="70.0" text="Modifier">
                      <font>
                         <Font name="Arial Bold" size="13.0" />
@@ -61,7 +56,7 @@
                         <Font name="Arial Bold" size="13.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="178.0" text="History">
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="239.0" text="History">
                      <font>
                         <Font name="Arial Bold" size="13.0" />
                      </font>
@@ -188,18 +183,6 @@
                         <Slider fx:id="dQslide" blockIncrement="1.0" majorTickUnit="1.0" max="2.0" maxHeight="27.0" minHeight="27.0" minorTickCount="1" prefHeight="27.0" value="1.0" />
                      </children>
                   </VBox>
-                  <VBox prefHeight="216.0" prefWidth="68.0">
-                     <children>
-                        <CheckBox fx:id="d4check" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" text="+/-" />
-                        <CheckBox fx:id="d6check" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" text="+/-" />
-                        <CheckBox fx:id="d8check" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" text="+/-" />
-                        <CheckBox fx:id="d10check" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" text="+/-" />
-                        <CheckBox fx:id="d12check" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" text="+/-" />
-                        <CheckBox fx:id="d100check" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" text="+/-" />
-                        <CheckBox fx:id="d20check" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" text="+/-" />
-                        <CheckBox fx:id="dQcheck" maxHeight="27.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" text="+/-" />
-                     </children>
-                  </VBox>
                   <VBox prefHeight="192.0" prefWidth="50.0">
                      <children>
                         <TextField fx:id="modD4" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="mod" />
@@ -212,7 +195,7 @@
                         <TextField fx:id="modDQ" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="mod" />
                      </children>
                   </VBox>
-                  <VBox prefHeight="216.0" prefWidth="23.0" />
+                  <VBox prefHeight="225.0" prefWidth="25.0" />
                   <VBox prefHeight="231.0" prefWidth="44.0">
                      <children>
                         <Button fx:id="d4b" mnemonicParsing="false" onAction="#rolld4" text="roll" />
@@ -225,7 +208,7 @@
                         <Button fx:id="dQb" mnemonicParsing="false" onAction="#rolldQ" text="roll" />
                      </children>
                   </VBox>
-                  <VBox prefHeight="216.0" prefWidth="23.0" />
+                  <VBox prefHeight="225.0" prefWidth="25.0" />
                   <VBox prefHeight="192.0" prefWidth="50.0">
                      <children>
                         <TextField fx:id="resD4" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="=" />
@@ -238,7 +221,7 @@
                         <TextField fx:id="resDQ" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" promptText="=" />
                      </children>
                   </VBox>
-                  <TextArea fx:id="bigBox" prefHeight="231.0" prefWidth="190.0" promptText="This is where your rolls will appear." text="This is where your rolls will appear." wrapText="true">
+                  <TextArea fx:id="bigBox" prefHeight="225.0" prefWidth="253.0" promptText="This is where your rolls will appear." text="This is where your rolls will appear." wrapText="true">
                      <font>
                         <Font name="Arial Bold" size="10.0" />
                      </font></TextArea>

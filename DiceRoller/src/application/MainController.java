@@ -34,23 +34,6 @@ public class MainController implements Initializable {
 	//d-variable number
 	@FXML
 	private TextField valueDQ;
-	//Checkboxes for +/-
-	@FXML
-	private CheckBox d4check;
-	@FXML
-	private CheckBox d6check;
-	@FXML
-	private CheckBox d8check;
-	@FXML
-	private CheckBox d10check;
-	@FXML
-	private CheckBox d12check;
-	@FXML
-	private CheckBox d100check;
-	@FXML
-	private CheckBox d20check;
-	@FXML
-	private CheckBox dQcheck;
 	//Sliders for advantage/disadvantage
 	@FXML
 	private Slider d4slide;
@@ -148,42 +131,42 @@ public class MainController implements Initializable {
 	
 	@FXML
 	public void rolld4(ActionEvent event){
-		intermediate(numD4, null, modD4, d4check, d4slide, resD4, 4);
+		intermediate(numD4, null, modD4, d4slide, resD4, 4);
 	}
 	
 	@FXML
 	public void rolld6(ActionEvent event){
-		intermediate(numD6, null, modD6, d6check, d6slide, resD6, 6);
+		intermediate(numD6, null, modD6, d6slide, resD6, 6);
 	}
 	
 	@FXML
 	public void rolld8(ActionEvent event){
-		intermediate(numD8, null, modD8, d8check, d8slide, resD8, 8);
+		intermediate(numD8, null, modD8, d8slide, resD8, 8);
 	}
 	
 	@FXML
 	public void rolld10(ActionEvent event){
-		intermediate(numD10, null, modD10, d10check, d10slide, resD10, 10);
+		intermediate(numD10, null, modD10, d10slide, resD10, 10);
 	}
 	
 	@FXML
 	public void rolld12(ActionEvent event){
-		intermediate(numD12, null, modD12, d12check, d12slide, resD12, 12);
+		intermediate(numD12, null, modD12, d12slide, resD12, 12);
 	}
 	
 	@FXML
 	public void rolld100(ActionEvent event){
-		intermediate(numD100, null, modD100, d100check, d100slide, resD100, 100);
+		intermediate(numD100, null, modD100, d100slide, resD100, 100);
 	}
 	
 	@FXML
 	public void rolld20(ActionEvent event){
-		intermediate(numD20, null, modD20, d20check, d20slide, resD20, 20);
+		intermediate(numD20, null, modD20, d20slide, resD20, 20);
 	}
 	
 	@FXML
 	public void rolldQ(ActionEvent event){
-		intermediate(numDQ, valueDQ, modDQ, dQcheck, dQslide, resDQ, 1);
+		intermediate(numDQ, valueDQ, modDQ, dQslide, resDQ, 1);
 	}
 	
 	@FXML
@@ -191,7 +174,7 @@ public class MainController implements Initializable {
 		total.setText("0");
 	}
 	
-	public void intermediate(TextField number, TextField value, TextField modifier, CheckBox check, Slider slider, TextField result, int max){
+	public void intermediate(TextField number, TextField value, TextField modifier, Slider slider, TextField result, int max){
 		int num = 1;
 		int mod;
 		Integer res;
@@ -209,11 +192,7 @@ public class MainController implements Initializable {
 					max = Integer.parseInt(value.getText());
 		//Set Modifier
 		if(!modifier.getText().isEmpty())
-			if(check.isSelected()){
-				mod = Integer.parseInt(modifier.getText());
-			}else{
-				mod = Integer.parseInt(modifier.getText()) * -1;
-			}
+			mod = Integer.parseInt(modifier.getText());
 		else
 			mod = 0;
 		
@@ -277,15 +256,6 @@ public class MainController implements Initializable {
 	
 	public void fullReset() {
 		// TODO Auto-generated method stub
-		//Set Checkboxes
-		d4check.setSelected(true);
-		d6check.setSelected(true);
-		d8check.setSelected(true);
-		d10check.setSelected(true);
-		d12check.setSelected(true);
-		d100check.setSelected(true);
-		d20check.setSelected(true);
-		dQcheck.setSelected(true);
 		//Set Sliders
 		d4slide.setValue(1.0);
 		d6slide.setValue(1.0);
@@ -325,7 +295,7 @@ public class MainController implements Initializable {
 		resD20.setText("");
 		resDQ.setText("");
 		//Set Big box Text
-		bigBox.setText("    READ ME\n-------------------------\nThis is your roll history. Your most recent rolls will appear at the top.\n\nRolls that would yeild a number less than 1 have been increased to 1.\n\nThe slider bar: sliding the button left rolls with advantage, sliding the button right rolls with disadvantage, leaving/reseting the button to the center rolls normally.\n\nThe Checkboxes: leaving the boxes selected will apply a positive modifier to the roll; deselecting the boxes will apply a negative modifier to the roll.\n\nTriple-Advantage Attack: Selecting this box will take the highest of three d20 rolls when a d20 is rolled.\n\nReroll 1s on d20: Selecting this box will reroll rolls of 1 on each d20 rolled- once per die.\n\nCrit-Minimum: the number is the lowest roll on which you are capable of acheiving a critical hit on the d20. Selecting this box will toggle wether critical hits and critical misses are tracked and recorded.\n\nReroll 1 & 2 on Damage Dice: Selecting this box will reroll rolls of 1 or 2 on each non-d20 die rolled- once per die.\n\nCarry Total: When the box to the left is selected, each total from each set of rolled die henceforth shall be totaled here (useful if you roll multiple types of dice for damage). The total resets when the checkbox is toggled off.\n\nThanks for using my tool. -TRE");
+		bigBox.setText("    READ ME\n-------------------------\nThis is your roll history. Your most recent rolls will appear at the top.\n\nRolls that would yeild a number less than 1 have been increased to 1.\n\nThe slider bar: sliding the button left rolls with advantage, sliding the button right rolls with disadvantage, leaving/reseting the button to the center rolls normally.\n\nTriple-Advantage Attack: Selecting this box will take the highest of three d20 rolls when a d20 is rolled.\n\nReroll 1s on d20: Selecting this box will reroll rolls of 1 on each d20 rolled- once per die.\n\nCrit-Minimum: the number is the lowest roll on which you are capable of acheiving a critical hit on the d20. Selecting this box will toggle wether critical hits and critical misses are tracked and recorded.\n\nReroll 1 & 2 on Damage Dice: Selecting this box will reroll rolls of 1 or 2 on each non-d20 die rolled- once per die.\n\nCarry Total: When the box to the left is selected, each total from each set of rolled die henceforth shall be totaled here (useful if you roll multiple types of dice for damage). The total resets when the checkbox is toggled off.\n\nThanks for using my tool. -TRE");
 		//Set Specialty Needs
 		triadv.setSelected(false);
 		rr12.setSelected(false);
